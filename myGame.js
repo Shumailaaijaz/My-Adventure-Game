@@ -32,13 +32,13 @@ class Opponent {
 let player = await inquirer.prompt({
     type: "input",
     name: "name",
-    message: "Please Enter your name:"
+    message: "Please Enter your name :"
 });
 let opponent = await inquirer.prompt({
     type: "list",
     name: "select",
     message: "Select your opponent",
-    choices: ["skeleton", "Assassin", "Zombie"]
+    choices: ["skeleton", "Alien", "Zombie"]
 });
 console.log(`${chalk.bold.bgBlueBright(player.name)} VS ${chalk.bold.bgCyanBright(opponent.select)}`);
 // Gather data
